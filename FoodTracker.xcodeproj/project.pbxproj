@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE41B71B1AD99E33004BE025 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41B71A1AD99E33004BE025 /* DataController.swift */; };
+		DE41B71D1AD9FC48004BE025 /* USDAItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41B71C1AD9FC48004BE025 /* USDAItem.swift */; };
 		DEFA15A31AD772FC002B8991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFA15A21AD772FC002B8991 /* AppDelegate.swift */; };
 		DEFA15A61AD772FC002B8991 /* FoodTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEFA15A41AD772FC002B8991 /* FoodTracker.xcdatamodeld */; };
 		DEFA15A81AD772FC002B8991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFA15A71AD772FC002B8991 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		DE41B71A1AD99E33004BE025 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		DE41B71C1AD9FC48004BE025 /* USDAItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USDAItem.swift; sourceTree = "<group>"; };
 		DEFA159D1AD772FC002B8991 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFA15A11AD772FC002B8991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEFA15A21AD772FC002B8991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				DEFA15AC1AD772FC002B8991 /* Images.xcassets */,
 				DEFA15AE1AD772FC002B8991 /* LaunchScreen.xib */,
 				DEFA15A41AD772FC002B8991 /* FoodTracker.xcdatamodeld */,
+				DE41B71C1AD9FC48004BE025 /* USDAItem.swift */,
 				DEFA15A01AD772FC002B8991 /* Supporting Files */,
 			);
 			path = FoodTracker;
@@ -224,6 +227,7 @@
 				DE41B71B1AD99E33004BE025 /* DataController.swift in Sources */,
 				DEFA15A81AD772FC002B8991 /* ViewController.swift in Sources */,
 				DEFA15A61AD772FC002B8991 /* FoodTracker.xcdatamodeld in Sources */,
+				DE41B71D1AD9FC48004BE025 /* USDAItem.swift in Sources */,
 				DEFA15A31AD772FC002B8991 /* AppDelegate.swift in Sources */,
 				DEFA15C61AD77612002B8991 /* DetailViewController.swift in Sources */,
 			);
