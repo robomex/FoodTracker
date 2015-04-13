@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var usdaItem: USDAItem?
+    
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {

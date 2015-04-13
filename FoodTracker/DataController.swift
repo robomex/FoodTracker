@@ -187,6 +187,8 @@ class DataController {
                                 }
                                 
                                 (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
+                                
+                                
                             }
                         }
                     }
