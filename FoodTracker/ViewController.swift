@@ -60,6 +60,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.suggestedSearchFoods = ["apple", "bacon", "bagel", "banana", "beer", "bread", "broccoli", "brussel sprouts", "burger", "cappuccino", "carrots", "cheese", "chicken nuggets", "chili", "chocolate chip cookies", "coffee", "donut", "graham cracker", "hot dog", "ice cream", "ketchup", "milk", "mountain dew", "nuts", "oatmeal", "orange juice", "peanut butter", "pizza", "pork belly", "potato", "pretzels", "rice", "salsa", "shrimp", "spaghetti", "wine"]
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "usdaItemDidComplete:", name: kUSDAItemCompleted, object: nil)
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -71,7 +73,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -315,6 +322,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    // Mark - NSNotificationCenter
     
+    func usdaItemDidComplete(notification: NSNotification) {
+        
+        println("usdaItemDidComplete in ViewController")
+        requestFavoritedUSDAItems()
+        let selectedScopeButtonIndex = self.searchController.searchBar.selectedScopeButtonIndex
+        
+        if selectedScopeButtonIndex == 2 {
+            self.tableView.reloadData()
+        }
+    }
 }
-
